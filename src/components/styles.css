@@ -33,11 +33,7 @@ body {
 {
   height: 30px;
   margin: 0 15px;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
-}
-.navBarULRight {
-  /* position: absolute;
-  right: 30px; */
+  border-right: 1px solid rgba(30, 30, 30, 0.3);
 }
 .githubIcon {
   width: 15px;
@@ -57,11 +53,11 @@ body {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff !important;
+  background-color: #000 !important;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: #542683;
+  background-color: rgb(255, 188, 0);
 }
 
 .headerWrapper {
@@ -82,7 +78,7 @@ body {
   border: none;
 }
 .formElement svg path {
-  fill: #fff;
+  fill: #000;
 }
 .searchInput {
   width: calc(100% - 26px);
@@ -107,7 +103,7 @@ body {
 }
 .hitWrapper
 {
-  background-color: #fff;
+  background-color: #000;
   padding: 4px;
   border-radius: 4px;
   position: absolute;
@@ -131,7 +127,7 @@ body {
   font-size: 14px;
 }
 .headerTitle a {
-  color: #fff;
+  color: #000;
 }
 
 .headerTitle a:hover {
@@ -159,17 +155,17 @@ body {
 
 /* Header section starts here */
 .navBarDefault {
-  background-color: #372476;
+  background-color: rgb(255, 187, 0);
   border-radius: 0;
   border-top: 0;
   margin-bottom: 0;
   border: 0;
   display: flex;
   align-items: center;
-  box-shadow: -1px 0px 4px 1px rgba(175,158,232,.4);
-  -webkit-box-shadow: -1px 0px 4px 1px rgba(175,158,232,.4);
-  -moz-box-shadow: -1px 0px 4px 1px rgba(175,158,232,.8);
-  -o-box-shadow: -1px 0px 4px 1px rgba(175,158,232,.4);
+  box-shadow: -1px 0px 4px 1px rgba(255, 188, 0,.4);
+  -webkit-box-shadow: -1px 0px 4px 1px rgba(255, 188, 0,.4);
+  -moz-box-shadow: -1px 0px 4px 1px rgba(255, 188, 0,.8);
+  -o-box-shadow: -1px 0px 4px 1px rgba(255, 188, 0, 0.4);
   z-index: 1;
   padding: 15px;
 }
@@ -182,22 +178,28 @@ body {
   font-size: 28px;
   line-height: 1.5;
   font-weight: 500;
-  color: #fff !important;
   padding: 0px 0px;
   display: flex;
   align-items: center;
 
 }
 
+.navbar-default .navbar-brand {
+  color: #000;
+}
+
+.headerTitle {
+  margin-left: 0.5rem;
+}
+
 .navBarBrand img {
   width: 40px;
-  margin-right: 16px;
   display: inline-block;
 }
 
 .navBarUL li a {
   font-family: 'Roboto';
-  color: #fff !important;
+  color: #000 !important;
   font-size: 16px;
   font-weight: 500;
   line-height: 1em;
@@ -213,7 +215,7 @@ body {
   width: 20px;
 }
 .mainWrapper {
-  color: rgb(59, 69, 78);
+  color: rgb(30, 30, 30);
   max-width: 750px;
 }
 .navBarUL li a:hover {
@@ -221,7 +223,7 @@ body {
 }
 pre {
   border: 0 !important;
-  background-color: rgb(245, 247, 249); /* !important; */
+  background-color: rgb(245, 247, 249);
 }
 
 .mainWrapper ul, .mainWrapper ol {
@@ -242,14 +244,14 @@ pre {
 .headerNav {
   font-family: 'Roboto';
   padding: 0px 24px;
-  color: rgb(116, 76, 188);
+  color: rgb(255, 188, 0);
   font-size: 16px;
   font-weight: 500;
   line-height: 1em;
 }
 
 .headerNav a {
-  color: rgb(116, 76, 188);
+  color: rgb(255, 188, 0);
   text-decoration: none;
 }
 
@@ -271,7 +273,6 @@ pre {
 }
 
 .sideBarUL li a {
-  color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
@@ -290,8 +291,8 @@ pre {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   padding: 7px 24px 7px 16px;
-  border-left: 1px solid #e6ecf1;
-  border-left-color: rgb(230, 236, 241);
+  border-left: 1px solid rgb(30, 30, 30);
+  border-left-color: rgb(30, 30, 30);
   color: #9DAAB6;
 }
 
@@ -301,8 +302,8 @@ pre {
 
 .rightSideBarUL li {
   list-style-type: none;
-  border-left: 1px solid #e6ecf1;
-  border-left-color: rgb(230, 236, 241);
+  border-left: 1px solid rgb(30, 30, 30);
+  border-left-color: rgb(30, 30, 30);
 }
 
 .rightSideBarUL li a {
@@ -323,18 +324,18 @@ pre {
 }
 
 .hideFrontLine  .active >a{
-  background-color: #542683;
-  color: #fff !important;
+  background-color: rgb(255, 188, 0);
+  color: #000 !important;
 }
 .firstLevel ul li .collapser svg path {
-  fill: #fff !important;
+  fill: #000 !important;
 }
 .active .collapser >svg >path {
-  fill: #663399 !important;
+  fill: rgb(255, 188, 0) !important;
 }
 
 .firstLevel ul .item ul .item {
-  border-left: 1px solid #e6ecf1;
+  border-left: 1px solid rgb(30, 30, 30);
 }
 
 .sideBarUL .item{
@@ -342,7 +343,7 @@ pre {
   padding: 0;
 }
 .sideBarUL .item >a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -351,15 +352,15 @@ pre {
   padding-left: 15px;
 }
 .sideBarUL .item>a:hover {
-  background-color: #542683;
-  color: #fff !important;
+  background-color: rgb(255, 188, 0);
+  color: #000 !important;
 }
 .showFrontLine .item >a:hover {
-  background-color: #542683;
+  background-color: rgb(255, 188, 0);
 }
 .showFrontLine .active >a {
-  color: #fff;
-  background-color: #473485;
+  color: #000;
+  background-color: rgba(255, 188, 0,0.8);
 }
 
 .sideBarUL  .item .item{
@@ -371,18 +372,17 @@ pre {
 }
 
 .showFrontLine  .item .item{
-  border-left: 1px solid #e6ecf1;
-  border-left-color: rgb(230, 236, 241);
+  border-left: 1px solid rgb(60, 60, 60);
   padding: 0;
   width: calc(100% - 16px) !important;
 }
 
 .showFrontLine .item .active>a {
-  border-color: rgb(230,236,241) !important;
+  border-color: rgb(60, 60, 60) !important;
   border-style: solid none solid solid;
   border-width: 1px 0px 1px 1px;
-  background-color: #542683;
-  color: #fff;
+  background-color: rgb(255, 188, 0);
+  color: #000;
 }
 
 
@@ -390,7 +390,7 @@ pre {
   display: flex;
   align-items: center;
   padding-bottom: 40px;
-  border-bottom: 1px solid rgb(230, 236, 241);
+  border-bottom: 1px solid rgb(30, 30, 30);
   margin-bottom: 32px;
 }
 
@@ -398,7 +398,7 @@ pre {
   font-size: 32px;
   line-height: 1.5;
   font-weight: 500;
-  border-left: 2px solid rgb(116, 76, 188);
+  border-left: 2px solid rgb(255, 188, 0);
   padding: 0 16px;
   flex: 1;
   margin-top: 0;
@@ -447,7 +447,7 @@ pre {
   color: rgb(36, 42, 49);
   background-color: rgb(255, 255, 255);
   border-radius: 3px;
-  border: 1px solid rgb(230, 236, 241);
+  border: 1px solid rgb(30, 30, 30);
   transition: border 200ms ease 0s;
   box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
   text-decoration: none;
@@ -513,7 +513,7 @@ pre {
   color: rgb(36, 42, 49);
   background-color: rgb(255, 255, 255);
   border-radius: 3px;
-  border: 1px solid rgb(230, 236, 241);
+  border: 1px solid rgb(30, 30, 30);
   transition: border 200ms ease 0s;
   box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
   text-decoration: none;
@@ -538,13 +538,13 @@ pre {
 }
 
 .nextBtn:hover, .previousBtn:hover {
-  color: rgb(116, 76, 188);
+  color: rgb(255, 188, 0);
   text-decoration: none;
-  border: 1px solid rgb(116, 76, 188);
+  border: 1px solid rgb(255, 188, 0);
 }
 
 .nextBtn:hover .rightArrow, .previousBtn:hover .leftArrow {
-  color: rgb(116, 76, 188);
+  color: rgb(255, 188, 0);
 }
 
 /* tables.css */

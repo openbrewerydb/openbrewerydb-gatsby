@@ -7,6 +7,9 @@ import config from '../../config.js';
 
 import Search from './search/index';
 const help = require('./images/help.svg');
+const unlockedSVG = require('./images/unlocked.svg');
+const beerSVG = require('./images/beer-mug.svg');
+const databaseSVG = require('./images/database.svg');
 const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
 
 let searchIndices = [];
@@ -62,11 +65,9 @@ const Header = ({location}) => (
           <nav className={'navbar navbar-default navBarDefault'}>
             <div className={'navbar-header navBarHeader'}>
               <Link to={finalLogoLink} className={'navbar-brand navBarBrand'}>
-                {logo.image !== '' ?
-                  (<img className={'img-responsive'} src={logo.image} alt={'logo'} />)
-                  :
-                  (<img className={'img-responsive'} src={logoImg} alt={'logo'} />)
-                }
+                <img className={'img-responsive'} src={unlockedSVG} alt={'Open (lock)'} />
+                <img className={'img-responsive'} src={beerSVG} alt={'Brewery'} />
+                <img className={'img-responsive'} src={databaseSVG} alt={'DB'} />
                 <div className={"headerTitle"} dangerouslySetInnerHTML={{__html: headerTitle}} />
               </Link>
               <button type="button" className={'navbar-toggle collapsed navBarToggle'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
