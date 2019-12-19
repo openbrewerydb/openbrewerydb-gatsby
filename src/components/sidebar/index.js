@@ -1,25 +1,25 @@
 import React from "react";
-import Tree from './tree';
-import {StaticQuery, graphql} from "gatsby";
+import Tree from "./tree";
+import { StaticQuery, graphql } from "gatsby";
 import styled from "react-emotion";
-import {ExternalLink} from "react-feather";
-import '../styles.css';
-import config from '../../../config';
+import { ExternalLink } from "react-feather";
+import "../styles.css";
+import config from "../../../config";
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
 // eslint-disable-next-line no-unused-vars
 const ListItem = styled(({ className, active, level, ...props }) => {
-    return (
-      <li className={className}>
-        <a href={props.to} {...props} />
-      </li>
-    );
+  return (
+    <li className={className}>
+      <a href={props.to} {...props} />
+    </li>
+  );
 })`
   list-style: none;
 
   a {
-    color: #5C6975;
+    color: #000;
     text-decoration: none;
     font-weight: ${({ level }) => (level === 0 ? 700 : 400)};
     padding: 0.45rem 0 0.45rem ${props => 2 + (props.level || 0) * 1}rem;
@@ -27,13 +27,13 @@ const ListItem = styled(({ className, active, level, ...props }) => {
     position: relative;
 
     &:hover {
-      color: rgb(116, 76, 188) !important;
+      color: #000 !important;
     }
 
     ${props =>
       props.active &&
       `
-      color: #663399;
+      color: rgb(255, 188, 0);
       border-color: rgb(230,236,241) !important;
       border-style: solid none solid solid;
       border-width: 1px 0px 1px 1px;
@@ -46,10 +46,8 @@ const ListItem = styled(({ className, active, level, ...props }) => {
   }
 `;
 
-const Sidebar = styled('aside')`
+const Sidebar = styled("aside")`
   width: 100%;
-  /* background-color: rgb(245, 247, 249); */
-  /* border-right: 1px solid #ede7f3; */
   height: 100vh;
   overflow: auto;
   position: fixed;
@@ -59,34 +57,37 @@ const Sidebar = styled('aside')`
   position: sticky;
   top: 0;
   padding-right: 0;
-  background-color: #372476;
+  background-color: rgb(255, 188, 0);
   /* Safari 4-5, Chrome 1-9 */
-  background: linear-gradient(#372476, #3b173b);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#372476), to(#3b173b));
+  background: linear-gradient(rgb(255, 188, 0), rgb(200, 150, 0));
+  background: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(rgb(255, 188, 0)),
+    to(rgb(200, 150, 0))
+  );
   /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(top, #372476, #3b173b);
+  background: -webkit-linear-gradient(top, rgb(255, 188, 0), rgb(200, 150, 0));
   /* Firefox 3.6+ */
-  background: -moz-linear-gradient(top, #372476, #3b173b);
+  background: -moz-linear-gradient(top, rgb(255, 188, 0), rgb(200, 150, 0));
   /* IE 10 */
-  background: -ms-linear-gradient(top, #372476, #3b173b);
+  background: -ms-linear-gradient(top, rgb(255, 188, 0), rgb(200, 150, 0));
   /* Opera 11.10+ */
-  background: -o-linear-gradient(top, #372476, #3b173b);
+  background: -o-linear-gradient(top, rgb(255, 188, 0), rgb(200, 150, 0));
   @media only screen and (max-width: 767px) {
     padding-left: 0px;
-    background-color: #372476;
-    background: #372476;
+    background-color: rgb(255, 188, 0);
+    background: rgb(255, 188, 0);
   }
-  @media (min-width: 767px) and (max-width:1023px)
-  {
+  @media (min-width: 767px) and (max-width: 1023px) {
     padding-left: 0;
   }
   @media only screen and (max-width: 1023px) {
     width: 100%;
-    /* position: relative; */
     height: 100vh;
   }
 `;
-
 
 const Divider = styled(props => (
   <li {...props}>
@@ -100,12 +101,11 @@ const Divider = styled(props => (
     margin: 0;
     padding: 0;
     border: 0;
-    border-bottom: 1px solid #ede7f3;
+    border-bottom: 1px solid rgb(30, 30, 30, 0.3);
   }
 `;
 
-
-const SidebarLayout = ({location}) => (
+const SidebarLayout = ({ location }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -121,16 +121,14 @@ const SidebarLayout = ({location}) => (
         }
       }
     `}
-    render={({allMdx}) => {
+    render={({ allMdx }) => {
       return (
         <Sidebar>
-          <ul className={'sideBarUL'}>
-            <Tree
-              edges={allMdx.edges}
-            />
+          <ul className={"sideBarUL"}>
+            <Tree edges={allMdx.edges} />
             <Divider />
             {config.sidebar.links.map((link, key) => {
-              if (link.link !== '' && link.text !== '') {
+              if (link.link !== "" && link.text !== "") {
                 return (
                   <ListItem key={key} to={link.link}>
                     {link.text}
