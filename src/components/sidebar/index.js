@@ -1,21 +1,16 @@
-import React from "react";
-import Tree from "./tree";
-import { StaticQuery, graphql } from "gatsby";
-import styled from "react-emotion";
-import { ExternalLink } from "react-feather";
-import "../styles.css";
-import config from "../../../config";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import styled from 'react-emotion';
+import { ExternalLink } from 'react-feather';
+import Tree from './tree';
+import '../styles.css';
+import config from '../../../config';
 
-const forcedNavOrder = config.sidebar.forcedNavOrder;
-
-// eslint-disable-next-line no-unused-vars
-const ListItem = styled(({ className, active, level, ...props }) => {
-  return (
-    <li className={className}>
-      <a href={props.to} {...props} />
-    </li>
-  );
-})`
+const ListItem = styled(({ key, to, children }) => (
+  <li key={key}>
+    <a href={to}>{children}</a>
+  </li>
+))`
   list-style: none;
 
   a {
@@ -46,7 +41,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
   }
 `;
 
-const Sidebar = styled("aside")`
+const Sidebar = styled('aside')`
   width: 100%;
   height: 100vh;
   overflow: auto;
@@ -105,7 +100,7 @@ const Divider = styled(props => (
   }
 `;
 
-const SidebarLayout = ({ location }) => (
+const SidebarLayout = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -121,26 +116,23 @@ const SidebarLayout = ({ location }) => (
         }
       }
     `}
-    render={({ allMdx }) => {
-      return (
-        <Sidebar>
-          <ul className={"sideBarUL"}>
-            <Tree edges={allMdx.edges} />
-            <Divider />
-            {config.sidebar.links.map((link, key) => {
-              if (link.link !== "" && link.text !== "") {
-                return (
-                  <ListItem key={key} to={link.link}>
-                    {link.text}
-                    <ExternalLink size={14} />
-                  </ListItem>
-                );
-              }
-            })}
-          </ul>
-        </Sidebar>
-      );
-    }}
+    render={({ allMdx }) => (
+      <Sidebar>
+        <ul className="sideBarUL">
+          <Tree edges={allMdx.edges} />
+          <Divider />
+          {config.sidebar.links.map((link, key) => {
+            if (link.link === '' || link.text === '') return '';
+            return (
+              <ListItem key={key} to={link.link}>
+                {link.text}
+                <ExternalLink size={14} />
+              </ListItem>
+            );
+          })}
+        </ul>
+      </Sidebar>
+    )}
   />
 );
 

@@ -71,6 +71,7 @@
         "extensions": [".js", ".jsx"]
       }
     ],
+    "react/jsx-props-no-spreading": 0,
     "radix": 0,
     "no-shadow": [
       2,

@@ -1,13 +1,20 @@
-import * as React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const AnchorTag = ({ children: link, ...props }) => {
-  if(link) {
+const AnchorTag = ({ children: link, href }) => {
+  if (link) {
     return (
-      <a href={props.href} target="_blank">{link}</a>
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        {link}
+      </a>
     );
-  } else {
-    return null;
   }
+  return null;
+};
+
+AnchorTag.propTypes = {
+  children: PropTypes.array,
+  href: PropTypes.string,
 };
 
 export default AnchorTag;
