@@ -117,7 +117,7 @@ const Tree = ({ edges }) => {
 };
 
 Tree.propTypes = {
-  edges: PropType.object,
+  edges: PropType.array,
 };
 
 export default Tree;

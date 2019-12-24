@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropType from 'prop-types';
 
 const AnchorTag = ({ children: link, href }) => {
   if (link) {
@@ -13,8 +13,8 @@ const AnchorTag = ({ children: link, href }) => {
 };
 
 AnchorTag.propTypes = {
-  children: PropTypes.array,
-  href: PropTypes.string,
+  children: PropType.oneOfType([PropType.array, PropType.string]),
+  href: PropType.string,
 };
 
 export default AnchorTag;
