@@ -1,17 +1,17 @@
-import system from "@rebass/components/emotion";
+import system from '@rebass/components/emotion';
 
 const Text = system(
   {
-    m: 0
+    m: 0,
   },
-  "space",
-  "color",
-  "fontFamily",
-  "fontSize",
-  "fontWeight",
-  "textAlign",
-  "lineHeight"
+  'space',
+  'color',
+  'fontFamily',
+  'fontSize',
+  'fontWeight',
+  'textAlign',
+  'lineHeight'
 );
-Text.displayName = "Text";
+Text.displayName = 'Text';
 
 export default Text;
