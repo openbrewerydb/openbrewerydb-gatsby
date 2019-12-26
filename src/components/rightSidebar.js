@@ -31,7 +31,7 @@ const ListItem = styled(({ key, to, children }) => (
   list-style: none;
 
   a {
-    color: #5c6975;
+    color: rgb(255, 188, 0);
     text-decoration: none;
     font-weight: ${({ level }) => (level === 0 ? 700 : 400)};
     padding: 0.45rem 0 0.45rem ${props => 2 + (props.level || 0) * 1}rem;
@@ -39,7 +39,7 @@ const ListItem = styled(({ key, to, children }) => (
     position: relative;
 
     &:hover {
-      color: rgb(116, 76, 188) !important;
+      color: rgb(116, 76, 188);
     }
   }
 `;
@@ -69,14 +69,12 @@ const SidebarLayout = ({ location }) => (
           let innerItems = [];
           const prefixedSlugPath =
             config.gatsby.pathPrefix + item.node.fields.slug;
-          console.log(item.node.fields.slug);
-          console.log(location);
+
           if (
             item.node.fields.slug === location.pathname ||
             prefixedSlugPath === location.pathname
           ) {
             if (item.node.tableOfContents.items) {
-              console.log(item.node.tableOfContents.items);
               innerItems = item.node.tableOfContents.items.map(
                 (innerItem, index) => {
                   const itemId = innerItem.title
@@ -95,7 +93,7 @@ const SidebarLayout = ({ location }) => (
           return innerItems;
         });
       }
-      console.log(navItems);
+
       if (navItems.length) {
         return (
           <Sidebar>
