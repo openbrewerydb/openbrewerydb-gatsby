@@ -41,7 +41,11 @@ injectGlobal`
 
   a {
     transition: color 0.15s;
-    color: rgb(255, 190, 0);
+    color: rgb(255, 162, 0);
+
+    &:hover {
+      color: rgb(255, 190, 0);
+    }
   }
 `;
 
