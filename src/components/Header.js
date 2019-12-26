@@ -167,7 +167,7 @@ const Header = ({ location }) => (
 );
 
 Header.propTypes = {
-  location: PropType.string,
+  location: PropType.object,
 };
 
 export default Header;

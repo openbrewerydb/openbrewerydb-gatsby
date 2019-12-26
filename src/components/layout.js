@@ -64,7 +64,7 @@ const Layout = ({ children, location }) => (
 
 Layout.propTypes = {
   children: PropType.array,
-  location: PropType.string,
+  location: PropType.object,
 };
 
 export default Layout;

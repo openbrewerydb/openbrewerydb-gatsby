@@ -61,19 +61,22 @@ const SidebarLayout = ({ location }) => (
       }
     `}
     render={({ allMdx }) => {
-      let finalNavItems;
+      let navItems = [];
       if (allMdx.edges !== undefined && allMdx.edges.length > 0) {
-        allMdx.edges.map(item => {
+        navItems = allMdx.edges.map(item => {
           if (item === undefined) return [];
 
-          let innerItems;
-          const fullSlugPath = config.gatsby.pathPrefix + item.node.fields.slug;
-
+          let innerItems = [];
+          const prefixedSlugPath =
+            config.gatsby.pathPrefix + item.node.fields.slug;
+          console.log(item.node.fields.slug);
+          console.log(location);
           if (
             item.node.fields.slug === location.pathname ||
-            fullSlugPath === location.pathname
+            prefixedSlugPath === location.pathname
           ) {
             if (item.node.tableOfContents.items) {
+              console.log(item.node.tableOfContents.items);
               innerItems = item.node.tableOfContents.items.map(
                 (innerItem, index) => {
                   const itemId = innerItem.title
@@ -92,13 +95,13 @@ const SidebarLayout = ({ location }) => (
           return innerItems;
         });
       }
-
-      if (finalNavItems && finalNavItems.length) {
+      console.log(navItems);
+      if (navItems.length) {
         return (
           <Sidebar>
             <ul className="rightSideBarUL">
               <div className="rightSideTitle">CONTENTS</div>
-              {finalNavItems}
+              {navItems}
             </ul>
           </Sidebar>
         );
@@ -113,7 +116,7 @@ const SidebarLayout = ({ location }) => (
 );
 
 SidebarLayout.propTypes = {
-  location: PropType.string,
+  location: PropType.object,
 };
 
 export default SidebarLayout;

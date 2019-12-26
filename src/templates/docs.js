@@ -71,7 +71,7 @@ const Edit = styled('div')`
   }
 `;
 
-function MDXRuntimeTest({ data }) {
+function MDXRuntimeTest({ location, data }) {
   const {
     allMdx,
     mdx,
@@ -126,7 +126,7 @@ function MDXRuntimeTest({ data }) {
   canonicalUrl += mdx.fields.slug;
 
   return (
-    <Layout location={docsLocation}>
+    <Layout location={location}>
       <Helmet>
         {metaTitle ? <title>{metaTitle}</title> : null}
         {metaTitle ? <meta name="title" content={metaTitle} /> : null}
@@ -168,6 +168,7 @@ function MDXRuntimeTest({ data }) {
 
 MDXRuntimeTest.propTypes = {
   data: PropType.object,
+  location: PropType.object,
 };
 
 export const pageQuery = graphql`

@@ -19,5 +19,5 @@ export default function ThemeProvider({ children, theme = {}, location }) {
 ThemeProvider.propTypes = {
   children: PropType.object,
   theme: PropType.object,
-  location: PropType.string,
+  location: PropType.object,
 };
