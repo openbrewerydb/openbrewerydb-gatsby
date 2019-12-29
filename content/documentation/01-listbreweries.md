@@ -79,7 +79,6 @@ May be filtered by basic (5 digit) postal code or more precisely filtered by pos
 
 `https://api.openbrewerydb.org/breweries?by_postal=44107`
 `https://api.openbrewerydb.org/breweries?by_postal=44107-4020`
-`https://api.openbrewerydb.org/breweries?by_postal=44107_4020`
 
 ### by_type
 
