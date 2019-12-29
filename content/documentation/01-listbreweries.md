@@ -67,6 +67,20 @@ Filter breweries by state.
 `https://api.openbrewerydb.org/breweries?by_name=new_york`
 `https://api.openbrewerydb.org/breweries?by_name=new%20mexico`
 
+### by_postal
+
+Filter breweries by postal code
+
+May be filtered by basic (5 digit) postal code or more precisely filtered by postal+4 (9 digit) code. 
+
+**Note** If filtering by postal+4 the search must include either a hyphen or an underscore. 
+
+#### Examples
+
+`https://api.openbrewerydb.org/breweries?by_postal=44107`
+`https://api.openbrewerydb.org/breweries?by_postal=44107-4020`
+`https://api.openbrewerydb.org/breweries?by_postal=44107_4020`
+
 ### by_type
 
 Filter by type of brewery.
