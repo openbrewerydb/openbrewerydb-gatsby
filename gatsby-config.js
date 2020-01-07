@@ -43,12 +43,16 @@ const plugins = [
   {
     resolve: `gatsby-plugin-gtag`,
     options: {
-      // your google analytics tracking id
       trackingId: config.gatsby.gaTrackingId,
-      // Puts tracking script in the head instead of the body
       head: true,
-      // enable ip anonymization
-      anonymize: false,
+      anonymize: true,
+    },
+  },
+  {
+    resolve: 'gatsby-plugin-mailchimp',
+    options: {
+      endpoint:
+        'https://openbrewerydb.us18.list-manage.com/subscribe/post?u=202d913a7827f282cbac61f98&amp;id=b47f43c806',
     },
   },
 ];
