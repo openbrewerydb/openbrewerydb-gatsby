@@ -56,8 +56,7 @@ function HTML({
       </head>
       <body {...bodyAttributes}>
         {preBodyComponents}
-        <div key="body" id="___gatsby">
-          {body}
+        <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }}>
         </div>
         {postBodyComponents}
       </body>
