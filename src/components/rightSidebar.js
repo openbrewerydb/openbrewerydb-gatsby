@@ -1,7 +1,7 @@
 import React from 'react';
 import PropType from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 import './styles.css';
 import config from '../../config';
 

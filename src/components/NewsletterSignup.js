@@ -1,6 +1,6 @@
 import React from 'react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 
 const NewsletterFormContainer = styled('div')`
   padding: 15px;
