@@ -3,7 +3,9 @@ import { StaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled-base';
 import { ExternalLink } from 'react-feather';
 import Tree from './tree';
-import NewsletterSignup from '../NewsletterSignup';
+import NewsletterSignup from './NewsletterSignup';
+import SidebarSocial from './SidebarSocial';
+import Sponsorship from './Sponsorship';
 import '../styles.css';
 import config from '../../../config';
 
@@ -133,6 +135,10 @@ const SidebarLayout = () => (
           })}
         </ul>
         <NewsletterSignup />
+        <Divider />
+        <SidebarSocial />
+        <Divider />
+        <Sponsorship />
       </Sidebar>
     )}
   />
