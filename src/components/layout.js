@@ -1,6 +1,6 @@
 import React from 'react';
 import PropType from 'prop-types';
-import styled from '@emotion/styled';
+import styled from '@emotion/styled-base';
 import { MDXProvider } from '@mdx-js/react';
 import { Global, css } from '@emotion/core';
 import ThemeProvider from './themeProvider';

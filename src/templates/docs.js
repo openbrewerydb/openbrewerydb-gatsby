@@ -3,7 +3,7 @@ import PropType from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
-import styled from '@emotion/styled';
+import styled from '@emotion/styled-base';
 import { Layout, Link } from '../components';
 import NextPrevious from '../components/NextPrevious';
 import '../components/styles.css';
