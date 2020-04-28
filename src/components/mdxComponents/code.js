@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from '@emotion/styled-base';
 
 const Code = styled('code')`
   background: #f9f7fb;

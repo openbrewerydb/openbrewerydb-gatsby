@@ -1,3 +1,6 @@
+/* eslint-disable react/no-danger */
+// https://github.com/chrisjm/openbrewerydb-gatsby/issues/9
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import config from '../config';
