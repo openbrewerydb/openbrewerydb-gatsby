@@ -5,6 +5,7 @@ import { ExternalLink } from 'react-feather';
 import Tree from './tree';
 import NewsletterSignup from './NewsletterSignup';
 import SidebarSocial from './SidebarSocial';
+import Sponsorship from './Sponsorship';
 import '../styles.css';
 import config from '../../../config';
 
@@ -136,6 +137,8 @@ const SidebarLayout = () => (
         <NewsletterSignup />
         <Divider />
         <SidebarSocial />
+        <Divider />
+        <Sponsorship />
       </Sidebar>
     )}
   />
