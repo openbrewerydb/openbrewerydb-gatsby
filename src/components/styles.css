@@ -405,17 +405,31 @@ pre {
   padding-top: 0;
 }
 
-.gitBtn {
-  height: 30px;
-  min-height: 30px;
+.githubButton {
+  font-weight: 500;
+  line-height: 1em;
+  text-decoration: none;
+  color: #555;
+  border: 1px solid rgb(211, 220, 228);
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.2s ease-out 0s;
+  text-decoration: none;
+  color: rgb(36, 42, 49);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 1px 1px 0px;
+  padding: 0.75rem;
   display: flex;
   align-items: center;
 }
-
-.gitBtn img {
-  width: 15px;
-  display: inline-block;
-  margin-right: 5px;
+.githubButton:hover {
+  background-color: rgb(245, 247, 249);
+  color: rgb(36, 42, 49);
+  text-decoration: none;
+}
+.githubIcon {
+  width: 1rem;
+  margin-right: 0.5rem;
 }
 
 .addPaddTopBottom {
