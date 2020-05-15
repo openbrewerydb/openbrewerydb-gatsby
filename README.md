@@ -1,10 +1,11 @@
-# openbrewerdb-gatsby
+# 🍻 Official Open Brewery DB Website
 
 The [Open Brewery DB website](https://www.openbrewerydb.org/) is an information and documentation site for the public Open Brewery DB API.
 
-## Uses
+## 📦 Uses
 
-![gatsby-gitbook-starter](https://graphql-engine-cdn.hasura.io/learn-hasura/gatsby-gitbook-starter/assets/documentation_app_blog.png)
+* [Gatsby](https://www.gatsbyjs.org/)
+* [MDX](https://mdxjs.com/)
 
 ## 🚀 Quickstart
 
@@ -17,3 +18,8 @@ npm start
 ```
 
 Visit `http://localhost:8000/` to view the app.
+
+## 🔗 Related
+
+* [Open Brewery DB Rails API](https://github.com/chrisjm/openbrewerydb-rails-api)
+* [Open Brewery DB Dataset](https://github.com/openbrewerydb/openbrewerydb)
