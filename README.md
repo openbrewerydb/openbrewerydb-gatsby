@@ -25,6 +25,10 @@ Visit `http://localhost:8000/` to view the app.
 
 ![Cloudflare Analytics](stats.png)
 
+## Contributing
+
+For information on contributing to this project, please see the [contributing guide](CONTRIBUTING.md) and our [code of conduct](CODE_OF_CONDUCT.md).
+
 ## 🔗 Related
 
 * [Open Brewery DB Rails API](https://github.com/chrisjm/openbrewerydb-rails-api)
