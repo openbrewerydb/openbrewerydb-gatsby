@@ -1,3 +1,5 @@
+![Open Brewery DB logo](OpenBreweryDBLogo.png)
+
 # 🍻 Official Open Brewery DB Website
 
 The [Open Brewery DB website](https://www.openbrewerydb.org/) is an information and documentation site for the public Open Brewery DB API.
@@ -18,6 +20,10 @@ npm start
 ```
 
 Visit `http://localhost:8000/` to view the app.
+
+## Analytics
+
+![Cloudflare Analytics](stats.png)
 
 ## 🔗 Related
 
