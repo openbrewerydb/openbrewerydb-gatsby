@@ -21,11 +21,11 @@ npm start
 
 Visit `http://localhost:8000/` to view the app.
 
-## Analytics
+## 📊 Analytics
 
 ![Cloudflare Analytics](stats.png)
 
-## Contributing
+## 🤝 Contributing
 
 For information on contributing to this project, please see the [contributing guide](CONTRIBUTING.md) and our [code of conduct](CODE_OF_CONDUCT.md).
 
