@@ -95,7 +95,7 @@ function MDXRuntimeTest({ location, data }) {
         <h1 className="title">{mdx.fields.title}</h1>
         <Edit className="mobileView">
           <GithubLink
-            to={`${docsLocation}/${mdx.parent.relativePath}`}
+            link={`${docsLocation}/${mdx.parent.relativePath}`}
             text="Edit on GitHub"
           />
         </Edit>
