@@ -1,6 +1,6 @@
 ---
 title: "Documentation"
-metaTitle: "API Documentation"
+metaTitle: "Open Brewery DB | Documentation"
 metaDescription: "API Documentaton for Open Brewery DB"
 ---
 

@@ -22,7 +22,14 @@ const config = {
     },
   },
   sidebar: {
-    forcedNavOrder: ['/', '/documentation'],
+    forcedNavOrder: [
+      '/',
+      '/documentation',
+      '/projects',
+      '/faq',
+      '/dataset',
+      '/credits',
+    ],
     links: [],
     frontline: false,
     ignoreIndex: false,

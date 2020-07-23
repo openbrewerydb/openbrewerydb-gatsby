@@ -4,7 +4,7 @@ import PropType from 'prop-types';
 const AnchorTag = ({ children: link, href }) => {
   if (link) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer">
+      <a href={href} rel="noopener noreferrer">
         {link}
       </a>
     );
