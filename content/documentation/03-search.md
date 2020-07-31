@@ -27,8 +27,7 @@ Search for breweries based on a search term.
     latitude: "37.807739",
     phone: "5103061914",
     website_url: "http://www.divingdogbrew.com",
-    updated_at: "2018-08-23T23:27:26.494Z",
-    tag_list: []
+    updated_at: "2018-08-23T23:27:26.494Z"
   },
   ...
 ]
