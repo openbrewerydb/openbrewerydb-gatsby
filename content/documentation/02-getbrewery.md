@@ -24,9 +24,6 @@ Get a single brewery.
   latitude: "39.1563725",
   phone: "5138368733",
   website_url: "http://www.madtreebrewing.com",
-  updated_at: "2018-08-24T15:44:22.281Z",
-  tag_list: [
-    "patio"
-  ]
+  updated_at: "2018-08-24T15:44:22.281Z"
 }
 ```
