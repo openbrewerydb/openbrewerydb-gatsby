@@ -91,28 +91,6 @@ Must be one of: `micro`, `regional`, `brewpub`, `large`, `planning`, `bar`, `con
 
 `https://api.openbrewerydb.org/breweries?by_type=micro`
 
-### by_tag
-
-Filter by one tag.
-
-One of: dog-friendly, patio, food-service, food-truck, tours
-
-**Note:** This is a work in progress. The production database does not yet have many tags associated with breweries.
-
-#### Example
-
-`https://api.openbrewerydb.org/breweries?by_tag=patio`
-
-### by_tags
-
-Filter by multiple, comma-separated tags. Combined by AND.
-
-List of: dog-friendly, patio, food-service, food-truck, tours
-
-#### Example
-
-`https://api.openbrewerydb.org/breweries?by_tags=patio,dog-friendly`
-
 ### page
 
 The offset or page of breweries to return.
