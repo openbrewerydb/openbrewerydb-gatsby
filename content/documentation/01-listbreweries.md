@@ -26,8 +26,7 @@ Returns a list of breweries.
     latitude: "37.7834497667258",
     phone: "4159326531",
     website_url: "http://almanacbeer.com",
-    updated_at: "2018-08-23T23:24:11.758Z",
-    tag_list: []
+    updated_at: "2018-08-23T23:24:11.758Z"
   },
   ...
 ]
