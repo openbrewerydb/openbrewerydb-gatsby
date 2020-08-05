@@ -28,7 +28,7 @@ function SidebarSocial() {
       <SidebarSocialHeading>Social</SidebarSocialHeading>
       <SocialIconsContainer>
         <SocialIcon>
-          <Link to="https://discord.gg/WMPB3VZ">
+          <Link to="https://discord.gg/3G3syaD">
             <img
               src={DiscordIcon}
               alt="Discord Logo"
