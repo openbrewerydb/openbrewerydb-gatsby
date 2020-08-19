@@ -63,8 +63,8 @@ Filter breweries by state.
 #### Examples
 
 `https://api.openbrewerydb.org/breweries?by_state=ohio`
-`https://api.openbrewerydb.org/breweries?by_name=new_york`
-`https://api.openbrewerydb.org/breweries?by_name=new%20mexico`
+`https://api.openbrewerydb.org/breweries?by_state=new_york`
+`https://api.openbrewerydb.org/breweries?by_state=new%20mexico`
 
 ### by_postal
 
