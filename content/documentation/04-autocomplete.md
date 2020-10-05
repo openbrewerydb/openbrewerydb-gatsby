@@ -6,7 +6,10 @@ metaDescription: "Autocomplete for drop-downs"
 
 Return a list of names and ids of breweries based on a search term. This endpoint is typically used for a drop-down selection.
 
-**Note:** For the `query` parameter, you can use underscores or [url encoding](https://en.wikipedia.org/wiki/Percent-encoding) for spaces.
+**Notes:** 
+
+- For the `query` parameter, you can use underscores or [url encoding](https://en.wikipedia.org/wiki/Percent-encoding) for spaces.
+- The maximum number of breweries returned is **15**.
 
 ### Example Output
 
