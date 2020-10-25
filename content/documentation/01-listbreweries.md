@@ -18,15 +18,19 @@ Returns a list of breweries.
     name: "Almanac Beer Company",
     brewery_type: "micro",
     street: "651B W Tower Ave",
+    address_2: null,
+    address_3: null,
     city: "Alameda",
     state: "California",
+    county_province: null,
     postal_code: "94501-5047",
     country: "United States",
     longitude: "-122.306283180899",
     latitude: "37.7834497667258",
     phone: "4159326531",
     website_url: "http://almanacbeer.com",
-    updated_at: "2018-08-23T23:24:11.758Z"
+    updated_at: "2018-08-23T23:24:11.758Z",
+    created_at: "2018-08-23T23:24:11.758Z"
   },
   ...
 ]
@@ -70,9 +74,9 @@ Filter breweries by state.
 
 Filter breweries by postal code
 
-May be filtered by basic (5 digit) postal code or more precisely filtered by postal+4 (9 digit) code. 
+May be filtered by basic (5 digit) postal code or more precisely filtered by postal+4 (9 digit) code.
 
-**Note** If filtering by postal+4 the search must include either a hyphen or an underscore. 
+**Note** If filtering by postal+4 the search must include either a hyphen or an underscore.
 
 #### Examples
 
@@ -84,7 +88,18 @@ May be filtered by basic (5 digit) postal code or more precisely filtered by pos
 
 Filter by type of brewery.
 
-Must be one of: `micro`, `regional`, `brewpub`, `large`, `planning`, `bar`, `contract`, `proprietor`
+Must be one of:
+
+* `micro` - Most craft breweries. For example, Samual Adams is still considered a micro brewery.
+* `nano` - An extremely small brewery which typically only distributes locally.
+* `regional` - A regional location of an expanded brewery. Ex. Sierra Nevada's Asheville, NC location.
+* `brewpub` - A beer-focused restaurant or restaurant/bar with a brewery on-premise.
+* `large` - A very large brewery. Likely not for visitors. Ex. Miller-Coors. (deprecated)
+* `planning` - A brewery in planning or not yet opened to the public.
+* `bar` - A bar. No brewery equipment on premise. (deprecated)
+* `contract` - A brewery that uses another brewery's equipment.
+* `proprietor` - Similar to contract brewing but refers more to a brewery incubator.
+* `closed` - A location which has been closed.
 
 #### Example
 
@@ -112,8 +127,8 @@ Number of breweries to return each call.
 
 Sort the results by one or more fields.
 
-- `-` for ascending order (default)
-- `+` for decending order
+* `-` for ascending order (default)
+* `+` for decending order
 
 #### Examples
 

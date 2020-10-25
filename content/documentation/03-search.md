@@ -19,7 +19,10 @@ Search for breweries based on a search term.
     name: "Diving Dog Brewhouse",
     brewery_type: "micro",
     street: "1802 Telegraph Ave",
+    address_2: null,
+    address_3: null,
     city: "Oakland",
+    county_province: null,
     state: "California",
     postal_code: "94612-2110",
     country: "United States",
@@ -27,7 +30,8 @@ Search for breweries based on a search term.
     latitude: "37.807739",
     phone: "5103061914",
     website_url: "http://www.divingdogbrew.com",
-    updated_at: "2018-08-23T23:27:26.494Z"
+    updated_at: "2018-08-23T23:27:26.494Z",
+    created_at: "2018-08-23T23:24:11.758Z"
   },
   ...
 ]
