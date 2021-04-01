@@ -134,3 +134,12 @@ Sort the results by one or more fields.
 
 `https://api.openbrewerydb.org/breweries?by_state=ohio&sort=type,-name`
 `https://api.openbrewerydb.org/breweries?by_city=san_diego&sort=-name`
+
+### by_distance
+
+Sort the results by distance from an origin point, denoted by 
+`latitude,longitude`.
+
+#### Example
+
+`https://api.openbrewerydb.org/breweries?by_distance=38.8977,77.0365`
