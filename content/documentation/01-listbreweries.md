@@ -36,15 +36,6 @@ Returns a list of breweries.
 ]
 ```
 
-### by_dist
-
-Sort the results by distance from an origin point, denoted by 
-`latitude,longitude`.
-
-#### Example
-
-`https://api.openbrewerydb.org/breweries?by_distance=38.8977,77.0365`
-
 ### by_city
 
 Filter breweries by city.
@@ -55,6 +46,15 @@ Filter breweries by city.
 
 `https://api.openbrewerydb.org/breweries?by_city=san_diego`
 `https://api.openbrewerydb.org/breweries?by_city=san%20diego`
+
+### by_dist
+
+Sort the results by distance from an origin point, denoted by 
+`latitude,longitude`.
+
+#### Example
+
+`https://api.openbrewerydb.org/breweries?by_distance=38.8977,77.0365`
 
 ### by_name
 
