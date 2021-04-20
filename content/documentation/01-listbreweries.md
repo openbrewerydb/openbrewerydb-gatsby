@@ -54,7 +54,7 @@ Sort the results by distance from an origin point, denoted by
 
 #### Example
 
-`https://api.openbrewerydb.org/breweries?by_distance=38.8977,77.0365`
+`https://api.openbrewerydb.org/breweries?by_dist=38.8977,77.0365`
 
 ### by_name
 
