@@ -136,10 +136,10 @@ Number of breweries to return each call.
 
 Sort the results by one or more fields.
 
-* `-` for ascending order (default)
-* `+` for decending order
+* `+` for ascending order
+* `-` for decending order 
 
 #### Examples
 
-`https://api.openbrewerydb.org/breweries?by_state=ohio&sort=type,-name`
+`https://api.openbrewerydb.org/breweries?by_state=ohio&sort=type,+name`
 `https://api.openbrewerydb.org/breweries?by_city=san_diego&sort=-name`
