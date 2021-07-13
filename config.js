@@ -5,11 +5,10 @@ const config = {
     gaTrackingId: 'UA-122476813-1',
   },
   header: {
-    logo:
-      'https://res.cloudinary.com/wanderingleafstudios/image/upload/v1572317242/openbrewerydb/OpenBreweryDBLogo.png',
+    logo: '',
     logoLink: 'https://www.openbrewerydb.org',
     title: 'Open Brewery DB',
-    githubUrl: 'https://github.com/chrisjm/openbrewerydb-gatsby',
+    githubUrl: 'https://github.com/openbrewerydb/openbrewerydb-gatsby',
     helpUrl: '',
     tweetText: '',
     links: [{ text: '', link: '' }],
@@ -38,12 +37,10 @@ const config = {
     title: 'Open Brewery DB',
     description:
       'Open Brewery DB is a public database and API of United States breweries built for web developers.',
-    ogImage:
-      'https://res.cloudinary.com/wanderingleafstudios/image/upload/v1572317242/openbrewerydb/OpenBreweryDBLogo.png',
+    ogImage: '/obdb-og.jpg',
     docsLocation:
-      'https://github.com/chrisjm/openbrewerydb-gatsby/tree/master/content',
-    favicon:
-      'https://res.cloudinary.com/wanderingleafstudios/image/upload/c_scale,w_48/v1572317576/openbrewerydb/OpenBreweryDBLogo-500x500.ico',
+      'https://github.com/openbrewerydb/openbrewerydb-gatsby/tree/master/content',
+    favicon: '/favicon.ico',
   },
 };
 

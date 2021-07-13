@@ -1,4 +1,4 @@
-![Open Brewery DB logo](OpenBreweryDBLogo.png)
+![Open Brewery DB logo](obdb-logo-md.jpg)
 
 # 🍻 Official Open Brewery DB Website
 
@@ -41,6 +41,6 @@ For information on contributing to this project, please see the [contributing gu
 
 ## 📫 Feedback
 
-Any feedback, please [email me](mailto:chris@openbrewerydb.org). 
+Any feedback, please [email me](mailto:chris@openbrewerydb.org).
 
 Cheers! 🍻

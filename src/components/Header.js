@@ -10,7 +10,7 @@ import './styles.css';
 
 const help = require('./images/help.svg');
 const unlockedSVG = require('./images/unlocked.svg');
-const beerSVG = require('./images/beer-mug.svg');
+const beerSVG = require('./images/beer-pint.svg');
 const databaseSVG = require('./images/database.svg');
 const twitter = require('./images/twitter.svg');
 
