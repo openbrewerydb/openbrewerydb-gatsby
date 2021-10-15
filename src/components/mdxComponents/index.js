@@ -29,7 +29,7 @@ export default {
   ),
   h3: props => (
     <Heading
-      id={props.children.replace(/\s+/g, '').toLowerCase()}
+      // id={props.children.replace(/\s+/g, '').toLowerCase()}
       {...props}
       is="h3"
       fontSize={3}
