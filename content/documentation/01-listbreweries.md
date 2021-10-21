@@ -139,6 +139,8 @@ Sort the results by one or more fields.
 * `asc` for ascending order
 * `desc` for decending order 
 
+**Note:** `by_dist` does not work with the `sort` filter since it is a filter of its own.
+
 #### Examples
 
 `https://api.openbrewerydb.org/breweries?by_state=ohio&sort=type,name:asc`
