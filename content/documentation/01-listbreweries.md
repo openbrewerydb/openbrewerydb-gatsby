@@ -81,11 +81,11 @@ Filter breweries by state.
 
 ### by_postal
 
-Filter breweries by postal code
+Filter breweries by postal code.
 
 May be filtered by basic (5 digit) postal code or more precisely filtered by postal+4 (9 digit) code.
 
-**Note** If filtering by postal+4 the search must include either a hyphen or an underscore.
+**Note:** If filtering by postal+4 the search must include either a hyphen or an underscore.
 
 #### Examples
 
@@ -137,7 +137,7 @@ Number of breweries to return each call.
 Sort the results by one or more fields.
 
 * `asc` for ascending order
-* `desc` for decending order 
+* `desc` for descending order
 
 **Note:** `by_dist` does not work with the `sort` filter since it is a filter of its own.
 
