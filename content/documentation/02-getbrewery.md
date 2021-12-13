@@ -8,12 +8,11 @@ Get a single brewery.
 
 ### Example Output
 
-`https://api.openbrewerydb.org/breweries/12432`
+`https://api.openbrewerydb.org/breweries/madtree-brewing-cincinnati`
 
 ```javascript
 {
-  id: 12432,
-  obdb_id: "madtree-brewing-cincinnati",
+  id: "madtree-brewing-cincinnati",
   name: "MadTree Brewing",
   brewery_type: "regional",
   street: "3301 Madison Rd",
@@ -28,7 +27,7 @@ Get a single brewery.
   latitude: "39.1563725",
   phone: "5138368733",
   website_url: "http://www.madtreebrewing.com",
-  updated_at: "2018-07-24T00:00:00.000Z",
-  created_at: "2018-07-24T00:00:00.000Z"
+  updated_at: "2021-10-23T02:24:55.243Z",
+  created_at: "2021-10-23T02:24:55.243Z"
 }
 ```
