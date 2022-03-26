@@ -9,6 +9,11 @@ The [Open Brewery DB website](https://www.openbrewerydb.org/) is an information 
 * [Gatsby](https://www.gatsbyjs.org/)
 * [MDX](https://mdxjs.com/)
 
+## Run through [databar.ai](https://databar.ai)
+If you don't know how to use APIs, you can use Brewery DB without code through the [databar.ai](https://databar.ai) platform.
+
+[![Run without code](https://databar.ai/external/ref_button.svg)](https://databar.ai/source/36?utm_source=brewery&utm_campaign=apiref)
+
 ## 🚀 Quickstart
 
 Get started by running the following commands:
